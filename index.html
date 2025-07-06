@@ -6,6 +6,7 @@
     <title>Jiajia Zhang - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <nav class="navbar">
@@ -14,6 +15,8 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -25,82 +28,199 @@
         </div>
     </nav>
 
-    <section id="home" class="hero">
+    <section id="home" class="hero" data-aos="fade-up">
         <div class="hero-content">
             <h1>Jiajia Zhang</h1>
-            <p>Full Stack Developer & Designer</p>
+            <p class="title">Full Stack Developer & Designer</p>
             <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I am a passionate full stack developer with a keen eye for design and user experience. I love creating beautiful, functional websites that solve real-world problems.</p>
+    <section id="about" class="about" data-aos="fade-up">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate full stack developer with a keen eye for design and user experience. I specialize in creating beautiful, functional websites that solve real-world problems. With a strong foundation in both frontend and backend technologies, I strive to deliver exceptional digital experiences.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Coming soon...</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Coming soon...</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>Coming soon...</p>
+    <section id="skills" class="skills" data-aos="fade-up">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Advanced</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Get in Touch</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-grid">
+                <div>
+                    <span class="role-badge">Senior Developer</span>
+                    <div class="company-info">
+                        <h3>Tech Company</h3>
+                        <p class="period">2023 - Present</p>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Lead development of large-scale web applications</li>
+                        <li>Architect and implement scalable solutions</li>
+                        <li>Mentor junior developers</li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="role-badge">Full Stack Developer</span>
+                    <div class="company-info">
+                        <h3>Startup</h3>
+                        <p class="period">2022 - 2023</p>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Developed and maintained web applications</li>
+                        <li>Implemented responsive designs</li>
+                        <li>Collaborated with cross-functional teams</li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="role-badge">Junior Developer</span>
+                    <div class="company-info">
+                        <h3>Agency</h3>
+                        <p class="period">2021 - 2022</p>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Assisted in web development projects</li>
+                        <li>Learned best practices</li>
+                        <li>Contributed to team projects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
+    <section id="projects" class="projects" data-aos="fade-up">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with real-time inventory tracking</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="live-link">Live Demo</a>
+                            <a href="#" class="github-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3>Portfolio Manager</h3>
+                        <p>Modern portfolio tracking application with real-time updates</p>
+                        <div class="tech-stack">
+                            <span>Vue.js</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="live-link">Live Demo</a>
+                            <a href="#" class="github-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact" data-aos="fade-up">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>email@example.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 234 567 890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>San Francisco, CA</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-bottom">
         <p>&copy; 2025 Jiajia Zhang. All rights reserved.</p>
-    </footer>
+    </div>
 
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+
     <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.10/libs/cn/index.js"></script>
-    <script>
-      new CozeWebSDK.WebChatClient({
-        config: {
-          bot_id: '7509680523996938251',
-        //   botInfo: {
-        //     parameters: {
-        //       user_name: 'John'
-        //     }
-        //   }
-        },
-        componentProps: {
-          title: 'Coze',
-        },
-        auth: {
-          type: 'token',
-          token: 'pat_YIYg0Iegvrcmm9qhKKnqCDFpPCmO5QASIfszUyiHemW4upMApJ2dpAvNogNgwdyS',
-          onRefreshToken: function () {
-            return 'pat_YIYg0Iegvrcmm9qhKKnqCDFpPCmO5QASIfszUyiHemW4upMApJ2dpAvNogNgwdyS'
-          }
-        }
-      });
-    </script>
+<script>
+  new CozeWebSDK.WebChatClient({
+    config: {
+      bot_id: '7509680523996938251',
+    },
+    componentProps: {
+      title: 'Coze',
+    },
+    auth: {
+      type: 'token',
+      token: 'pat_YIYg0Iegvrcmm9qhKKnqCDFpPCmO5QASIfszUyiHemW4upMApJ2dpAvNogNgwdyS',
+      onRefreshToken: function () {
+        return 'pat_YIYg0Iegvrcmm9qhKKnqCDFpPCmO5QASIfszUyiHemW4upMApJ2dpAvNogNgwdyS'
+      }
+    }
+  });
+</script>
 </body>
 </html>
